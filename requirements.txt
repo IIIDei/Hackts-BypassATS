@@ -1,0 +1,5 @@
+PyMuPDF
+yake
+requests
+beautifulsoup4
+colorama
