@@ -1,2 +1,40 @@
-*.pdf
-.DS_Store
+# Python bytecode files
+__pycache__/            # Ignore Python bytecode files
+*.pyc                   # Ignore compiled Python files
+*.pyo                   # Ignore Python optimization files
+*.pyd                   # Ignore Python dynamic library files
+
+# Virtual environment
+venv/                   # Ignore virtual environment folder
+env/                    # Ignore virtual environment folder
+
+# Jupyter Notebooks
+.ipynb_checkpoints/     # Ignore Jupyter notebook checkpoints
+
+# Development environment folders
+.vscode/                # Ignore VSCode configuration folder
+.idea/                  # Ignore PyCharm/IntelliJ configuration folder
+
+# PyCharm project files
+*.iml                   # Ignore PyCharm project files
+
+# Cache folders
+*.cache                 # Ignore cache files
+
+# Log files
+*.log                   # Ignore log files
+
+# Test-related files
+*.coverage              # Ignore test coverage files
+*.tox                   # Ignore tox configuration files
+*.nox                   # Ignore nox configuration files
+*.coverage.*            # Ignore all test coverage files
+*.hypothesis/           # Ignore Hypothesis testing library files
+
+# Build-related files
+build/                  # Ignore build folders
+dist/                   # Ignore distribution folders
+*.egg-info/             # Ignore egg-info folders
+
+# Ignore PDF files (if you don't want to track them in Git)
+*.pdf                   # Ignore PDF files
