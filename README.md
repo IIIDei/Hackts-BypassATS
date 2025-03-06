@@ -50,14 +50,26 @@ Hackts-BypassATS is a tool designed to optimize your PDF resume by discreetly em
 ## Configuration
 
 - **Set Your Resume File:**  
-  Open the main Python script and modify the `NOM_CV` variable to the name of your resume PDF file. Ensure that your resume is located in the same directory as the script.
+  Open the `ats_bypass.py` script and modify the `RESUME_FILE` variable to the name of your resume PDF file. Ensure that your resume is located in the same directory as the script.
   ```python
-  NOM_CV = "Your_Resume.pdf"  # Replace with your resume file name
+  RESUME_FILE = "Your_Resume.pdf"  # Replace with your resume file name
   ```
 
 - **Language Setting for Keyword Extraction:**  
-  By default, the script is configured to extract keywords in French (using `language = "fr"`).  
-  If your job posting is in another language, change this value accordingly in the `extraire_mots_cles` function.
+  By default, the script is configured to extract keywords in English (using `language = "en"`).  
+  If your job posting is in another language, change this value accordingly in the `extract_keywords` function.  
+  Here's a table of language codes you can use:
+
+  | Language | Code |
+  |----------|------|
+  | French   | fr   |
+  | English  | en   |
+  | Spanish  | es   |
+  | German   | de   |
+  | Italian  | it   |
+  | Portuguese | pt  |
+
+  The default is **English** (`language = "en"`). You can change it depending on the language of the job description.
 
 ## Usage
 
@@ -65,7 +77,7 @@ Hackts-BypassATS is a tool designed to optimize your PDF resume by discreetly em
 
 1. **Run the Script:**
    ```bash
-   python main.py
+   python ats_bypass.py
    ```
 
 2. **Enter the LinkedIn URL:**  
@@ -79,7 +91,7 @@ Hackts-BypassATS is a tool designed to optimize your PDF resume by discreetly em
 
 1. **Run the Script in Manual Mode:**
    ```bash
-   python main.py -m
+   python ats_bypass.py -m
    ```
 
 2. **Choose Your Input Method:**  
